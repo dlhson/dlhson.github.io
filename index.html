@@ -36,7 +36,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -81,7 +80,7 @@
             <div class="content">
                 <h1>Read, learn & share all things about <strong><span class="color">Startup</span></strong></h1>
                 <p class="lead">Startup is challenging, but not a lonely place</p>
-                <p><button type="submit" class="btn tf-btn btn-default">Join us now</button></p>
+                <p><button type="submit" class="btn tf-btn btn-default" data-toggle="modal" data-target="#myModal">Join us now</button></p>
                 <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
             </div>
         </div>
@@ -182,16 +181,16 @@
                     <li class="pull-left">
                         <ol class="type">
                             <li><a href="#" data-filter="*" class="active">All</a></li>
-                            <li><a href="#" data-filter=".entrepreneurship">Entrepreneurship</a></li>
-                            <li><a href="#" data-filter=".branding" >Idea, Product & Design</a></li>
-                            <li><a href="#" data-filter=".biz">Business models & Growth</a></li>
-                            <li><a href="#" data-filter=".branding" >Team & Culture</a></li>
-                            <li><a href="#" data-filter=".biz">Management & Leadership</a></li>
-                            <li><a href="#" data-filter=".app">Marketing, Branding & Sales</a></li>
-                            <li><a href="#" data-filter=".branding" >Psychology & Behavior</a></li>
-                            <li><a href="#" data-filter=".branding" >Negotiation & Relation</a></li>
-                            <li><a href="#" data-filter=".branding" >Personal growth</a></li>
-                            <li><a href="#" data-filter=".branding" >Inspiration</a></li>
+                            <li><a href="#" data-filter=".entrepreneur">Entrepreneur</a></li>
+                            <li><a href="#" data-filter=".product" >Product, Idea & Design</a></li>
+                            <li><a href="#" data-filter=".business">Business & Growth</a></li>
+                            <li><a href="#" data-filter=".team" >Team & Culture</a></li>
+                            <li><a href="#" data-filter=".management">Management & Leadership</a></li>
+                            <li><a href="#" data-filter=".marketing">Marketing, Branding & Sales</a></li>
+                            <li><a href="#" data-filter=".psychology" >Psychology & Behavior</a></li>
+                            <li><a href="#" data-filter=".negotiation" >Negotiation & Relation</a></li>
+                            <li><a href="#" data-filter=".personalgrowth" >Personal growth</a></li>
+                            <li><a href="#" data-filter=".inspiration" >Inspiration</a></li>
                         </ol>
                     </li>
                 </ul>
@@ -200,134 +199,519 @@
 
             <div id="lightbox" class="row">
 
-                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+              <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur management">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <a href="http://www.amazon.com/The-Lean-Startup-Entrepreneurs-Continuous/dp/0307887898">
+                      <div class="hover-text">
+                        <h4>Eric Ries</h4>
+                        <small>The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</small>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <img src="https://s-media-cache-ak0.pinimg.com/736x/6b/d1/f0/6bd1f0afb7065d55125f94b32f27a902.jpg" class="img-responsive" alt="...">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 col-lg-3 business product">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <a href="https://strategyzer.com/value-proposition-design">
+                      <div class="hover-text">
+                        <h4>Alexander Osterwalder</h4>
+                        <small>Value Proposition Design: How to Create Products and Services Customers Want</small>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <img src="http://ecx.images-amazon.com/images/I/51LVkneiqBL.jpg" class="img-responsive" alt="...">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur business product">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <a href="http://www.amazon.com/The-Day-Startup-Learn-Launch-ebook/dp/B00NZFKB8S">
+                      <div class="hover-text">
+                        <h4>Dan Norris, Rob Walling</h4>
+                        <small>The 7 Day Startup: You Don't Learn Until You Launch</small>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <img src="https://s-media-cache-ak0.pinimg.com/736x/1a/af/b1/1aafb111d81adcd756e9e80cabe04404.jpg" class="img-responsive" alt="...">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur business product marketing">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <a href="http://www.amazon.com/Traction-Startup-Guide-Getting-Customers/dp/0976339609">
+                      <div class="hover-text">
+                        <h4>Gabriel Weinberg, Justin Mares</h4>
+                        <small>Traction: A Startup Guide to Getting Customers</small>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <img src="https://s-media-cache-ak0.pinimg.com/736x/26/88/7f/26887f6c902d6ff800b6d6fea2181f4d.jpg" class="img-responsive" alt="...">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur product management">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <a href="http://www.amazon.com/Running-Lean-Iterate-Works-Series/dp/1449305172">
+                      <div class="hover-text">
+                        <h4>Ash Maurya</h4>
+                        <small>Running Lean: Iterate from Plan A to a Plan That Works (Lean Series)</small>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <img src="https://s-media-cache-ak0.pinimg.com/736x/69/ee/f8/69eef843264fbea8dce811499d2e5afb.jpg" class="img-responsive" alt="...">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 col-lg-3 psychology negotiation">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <a href="http://www.amazon.com/dp/006124189X/">
+                      <div class="hover-text">
+                        <h4>Robert B. Cialdini</h4>
+                        <small>Influence: The Psychology of Persuasion, Revised Edition</small>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <img src="https://s-media-cache-ak0.pinimg.com/736x/87/b6/e3/87b6e3eacaff005309ce9359c3fa83c0.jpg" class="img-responsive" alt="...">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 col-lg-3 business product">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <a href="http://www.amazon.com/Business-Model-Generation-Visionaries-Challengers/dp/0470876417">
+                      <div class="hover-text">
+                        <h4>Alexander Osterwalder, Yves Pigneur</h4>
+                        <small>Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers</small>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <img src="http://ecx.images-amazon.com/images/I/61hdwArEEXL.jpg" class="img-responsive" alt="...">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur management">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <a href="http://www.amazon.com/dp/0307463745/">
+                      <div class="hover-text">
+                        <h4>Jason Fried, David Heinemeier Hansson</h4>
+                        <small>Rework</small>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <img src="https://s-media-cache-ak0.pinimg.com/736x/68/4f/44/684f444e98a63467cef86a46ef7b6fb2.jpg" class="img-responsive" alt="...">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-6 col-md-3 col-lg-3 inspiration management team">
+                <div class="portfolio-item">
+                  <div class="hover-bg">
+                    <a href="http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537/">
+                      <div class="hover-text">
+                        <h4>Walter Isaacson</h4>
+                        <small>Steve Jobs</small>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <img src="https://s-media-cache-ak0.pinimg.com/736x/db/c3/bf/dbc3bf641b829befdb3b1cf40f18e6c0.jpg" class="img-responsive" alt="...">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur management">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <a href="http://www.amazon.com/The-Founders-Dilemmas-Anticipating-Entrepreneurship/dp/0691158304">
                                 <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
+                                    <h4>Noam Wasserman</h4>
+                                    <small>The Founder's Dilemmas: Anticipating and Avoiding the Pitfalls That Can Sink a Startup</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
-                                <img src="img/portfolio/01.jpg" class="img-responsive" alt="...">
+                                <img src="https://s-media-cache-ak0.pinimg.com/736x/a5/38/b5/a538b57e2767ef1b498b48176129d6fb.jpg" class="img-responsive" alt="...">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-3 photography app">
+
+                <div class="col-sm-6 col-md-3 col-lg-3 inspiration management team business">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <a href="http://www.amazon.com/The-Everything-Store-Bezos-Amazon/dp/0316219266">
                                 <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
+                                    <h4>Brad Stone</h4>
+                                    <small>The Everything Store: Jeff Bezos and the Age of Amazon</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
-                                <img src="img/portfolio/02.jpg" class="img-responsive" alt="...">
+                                <img src="https://s-media-cache-ak0.pinimg.com/736x/2d/20/4d/2d204d661f51b352e350cbf18aa61369.jpg" class="img-responsive" alt="...">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                <div class="col-sm-6 col-md-3 col-lg-3 psychology negotiation marketing">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <a href="http://www.amazon.com/Crucial-Conversations-Talking-Stakes-Edition/dp/1469266822">
                                 <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
+                                    <h4>Kerry Patterson, Joseph Grenny, Ron McMillan, Al Switzler</h4>
+                                    <small>Crucial Conversations: Tools for Talking When Stakes Are High, Second Edition</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
-                                <img src="img/portfolio/03.jpg" class="img-responsive" alt="...">
+                                <img src="https://s-media-cache-ak0.pinimg.com/736x/45/43/65/45436598c4e5bf82faa4697577ffdd7c.jpg" class="img-responsive" alt="...">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                <div class="col-sm-6 col-md-3 col-lg-3 team management">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <a href="http://www.amazon.com/The-Five-Dysfunctions-Team-Leadership/dp/0787960756">
                                 <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
+                                    <h4>Patrick Lencioni</h4>
+                                    <small>The Five Dysfunctions of a Team: A Leadership Fable</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
-                                <img src="img/portfolio/04.jpg" class="img-responsive" alt="...">
+                                <img src="https://s-media-cache-ak0.pinimg.com/736x/b4/7c/67/b47c673aafd626e27348a3a2b9ba57a1.jpg" class="img-responsive" alt="...">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
+                <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur management business">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <a href="http://www.amazon.com/The-E-Myth-Revisited-Small-Businesses/dp/0887307280">
                                 <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
+                                    <h4>Michael E. Gerber</h4>
+                                    <small>The E-Myth Revisited: Why Most Small Businesses Don't Work and What to Do About It</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
-                                <img src="img/portfolio/05.jpg" class="img-responsive" alt="...">
+                                <img src="https://s-media-cache-ak0.pinimg.com/736x/94/55/58/945558b3e511e5852cb2d40476029480.jpg" class="img-responsive" alt="...">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-3 app">
+                <div class="col-sm-6 col-md-3 col-lg-3 negotiation marketing">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <a href="http://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0143118757">
                                 <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
+                                    <h4>Roger Fisher, William L. Ury, Bruce Patton</h4>
+                                    <small>Getting to Yes: Negotiating Agreement Without Giving In</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
-                                <img src="img/portfolio/06.jpg" class="img-responsive" alt="...">
+                                <img src="https://s-media-cache-ak0.pinimg.com/736x/72/fe/a3/72fea31cc6a48cfc3d9e86f3e5836e32.jpg" class="img-responsive" alt="...">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-3 photography web">
+                <div class="col-sm-6 col-md-3 col-lg-3 personalgrowth inspiration">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <a href="http://www.amazon.com/The-Millionaire-Fastlane-Wealth-Lifetime/dp/0984358102">
                                 <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
+                                    <h4>MJ DeMarco</h4>
+                                    <small>The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime</small>
                                     <div class="clearfix"></div>
                                     <i class="fa fa-plus"></i>
                                 </div>
-                                <img src="img/portfolio/07.jpg" class="img-responsive" alt="...">
+                                <img src="https://s-media-cache-ak0.pinimg.com/736x/68/74/13/6874132b9cc7aa43fbd8938e6055207d.jpg" class="img-responsive" alt="...">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="img/portfolio/08.jpg" class="img-responsive" alt="...">
-                            </a>
+                <div class="col-sm-6 col-md-3 col-lg-3 personalgrowth inspiration entrepreneurship team management">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/The-ONE-Thing-Surprisingly-Extraordinary/dp/1885167776">
+                        <div class="hover-text">
+                          <h4>Jay Papasan</h4>
+                          <small>The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
                         </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/45/b1/d3/45b1d32784b37b60bcd313b4d8db12ec.jpg" class="img-responsive" alt="...">
+                      </a>
                     </div>
+                  </div>
                 </div>
 
+                <div class="col-sm-6 col-md-3 col-lg-3 business management team entrepreneur">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Scaling-Up-Companies-Rockefeller-Habits/dp/0986019526">
+                        <div class="hover-text">
+                          <h4>Verne Harnish</h4>
+                          <small>Scaling Up: How a Few Companies Make It...and Why the Rest Don't (Rockefeller Habits 2.0)</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/fa/61/76/fa617622c9250e7baca2c6750f976eda.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 psychology management">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">
+                        <div class="hover-text">
+                          <h4>Daniel Kahneman</h4>
+                          <small>Thinking, Fast and Slow</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/cd/e4/4b/cde44b84edf55d71a2145a819990baec.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur team management business marketing">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/The-Startup-Owners-Manual-Step-By-Step/dp/0984999302">
+                        <div class="hover-text">
+                          <h4>Steve Blank, Bob Dorf</h4>
+                          <small>The Startup Owner's Manual: The Step-By-Step Guide for Building a Great Company</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/4c/ec/1e/4cec1ecc9361cdc9d087ed58629ccee0.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur team management business psychology">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/The-Hard-Thing-About-Things/dp/0062273205/ref=pd_sim_b_9?ie=UTF8&refRID=11EAD9Z76WVDT3XTHMJ3">
+                        <div class="hover-text">
+                          <h4>Ben Horowitz</h4>
+                          <small>The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/05/39/90/053990dff4667c5662c391fa46eb62ec.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 entrepreneur team management business inspiration">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296/ref=pd_sim_b_1?ie=UTF8&refRID=11EAD9Z76WVDT3XTHMJ3">
+                        <div class="hover-text">
+                          <h4>Peter Thiel, Blake Masters</h4>
+                          <small>Zero to One: Notes on Startups, or How to Build the Future</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/03/2a/f0/032af04db2e47b5e3dd8587451f20d12.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 product entrepreneur psychology marketing">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Contagious-Why-Things-Catch-On/dp/1451686579">
+                        <div class="hover-text">
+                          <h4>Jonah Berger</h4>
+                          <small>Contagious: Why Things Catch On</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/05/14/cb/0514cb4acecdfba38031ce1a0b50115a.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 product psychology marketing">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287">
+                        <div class="hover-text">
+                          <h4>Chip Heath, Dan Heath</h4>
+                          <small>Made to Stick: Why Some Ideas Survive and Others Die</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/46/c9/57/46c957b7206167703a0725a638d5122b.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 marketing">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Growth-Hacker-Marketing-Primer-Advertising/dp/1591847389">
+                        <div class="hover-text">
+                          <h4>Ryan Holiday</h4>
+                          <small>Growth Hacker Marketing: A Primer on the Future of PR, Marketing, and Advertising</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/79/fa/b6/79fab6c5f620c24ae54bb534c73ec205.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 marketing">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Pitch-Anything-Innovative-Presenting-Persuading/dp/0071752854">
+                        <div class="hover-text">
+                          <h4>Oren Klaff</h4>
+                          <small>Pitch Anything: An Innovative Method for Presenting, Persuading, and Winning the Deal</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/df/0f/c6/df0fc6d4d967b0925d7f40289296e335.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 product">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Hooked-How-Build-Habit-Forming-Products-ebook/dp/B00HJ4A43S">
+                        <div class="hover-text">
+                          <h4>Nir Eyal, Ryan Hoover</h4>
+                          <small>Hooked: How to Build Habit-Forming Products </small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/95/25/60/952560bf2dfae5ff0d66c13aaa43e590.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 psychology">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/What-Every-BODY-Saying-Speed-Reading/dp/0061438294/ref=pd_sim_b_7?ie=UTF8&refRID=0N0VSGBCEZ96963WTD3X">
+                        <div class="hover-text">
+                          <h4>Joe Navarro, Marvin Karlins</h4>
+                          <small>What Every BODY is Saying: An Ex-FBI Agent's Guide to Speed-Reading People</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/9b/bc/77/9bbc77d5c03b5d30aee3ce148f1cc888.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 psychology negotiation">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Yes-Scientifically-Proven-Ways-Persuasive/dp/1416576142/ref=cm_cr_pr_product_top">
+                        <div class="hover-text">
+                          <h4>Noah J. Goldstein, Steve J. Martin, Robert B. Cialdini</h4>
+                          <small>Yes!: 50 Scientifically Proven Ways to Be Persuasive</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/73/e3/4b/73e34b2402c167fca5901a55e97b315c.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 product">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Badass-Making-Awesome-Kathy-Sierra/dp/1491919019">
+                        <div class="hover-text">
+                          <h4>Kathy Sierra</h4>
+                          <small>Badass: Making Users Awesome</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/93/78/9b/93789b2e00a1e3f57e114eee74af4b00.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 psychology">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/Predictably-Irrational-Revised-Expanded-Edition/dp/0061353248">
+                        <div class="hover-text">
+                          <h4>Dan Ariely</h4>
+                          <small>Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/e2/0e/af/e20eafd636c8afd22bb23b21f631d3d7.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 personalgrowth psychology">
+                  <div class="portfolio-item">
+                    <div class="hover-bg">
+                      <a href="http://www.amazon.com/The-Power-Habit-What-Business/dp/081298160X">
+                        <div class="hover-text">
+                          <h4>Charles Duhigg</h4>
+                          <small>The Power of Habit: Why We Do What We Do in Life and Business</small>
+                          <div class="clearfix"></div>
+                          <i class="fa fa-plus"></i>
+                        </div>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/70/be/21/70be21f3d772dc2bd880be97dfd9d14b.jpg" class="img-responsive" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                </div>
             </div>
 
             <div>
@@ -383,7 +767,7 @@
             <div class="pull-left fnav">
                 <p><strong>LAUSANNE STARTUP BOOK CLUB |</strong> An initiative by <a href="http://dolenh.com">Son Do Lenh.</a></p>
                 <p><span class="color-gray">All right reserved. Copyright © 2015.</span></p>
-                <p><span class="color-gray">Photos by <a href="http://startupstockphotos.com/">SSP</a> and <a href="http://www.wallsave.com">Wallsave</a>.  Original theme designed by <a href="https://dribbble.com/robertbrk">Robert Berki</a> and coded by <a href="https://dribbble.com/jennpereira">Jenn Pereira.</a></span></p>
+                <p><span class="color-gray">Photos by <a href="http://startupstockphotos.com/">SSP</a> and <a href="http://www.wallsave.com">Wallsave</a>.  Original theme designed by <a href="https://dribbble.com/robertbrk">Robert Berki</a>, coded by <a href="https://dribbble.com/jennpereira">Jenn Pereira,</a> tweaked by <a href="http://dolenh.com">Son Do Lenh.</a></span></p>
             </div>
             <div class="pull-right fnav">
                 <ul class="footer-social">
@@ -395,6 +779,55 @@
             </div>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+            <p><h4>Hi there, thanks for clicking.</h4></p>
+
+            <div>I guess, you are also thrilled by the idea of
+              <ul>
+                <li> having freedom of thoughts and actions</li>
+                <li> developing financial independence</li>
+                <li>bringing your Eureka moments to life</li>
+                <li>setting your own schedule</li>
+                <li> creating a legacy, or impacting the lives of many</li>
+                <li>gaining personal fulfillment</li>
+              </ul>
+            </div>
+
+            <h3>To join the club, please email me at son.dolenh@gmail.com and say your name. That's it.</h3>
+
+            <div>By the way, I'm Son Do Lenh, a Product Designer working in Lausanne. I'll get back to your email within 24 hours. I promise (except when Internet parts way with me)!</div>
+            <div>While I have you here, let me welcome you to the Startup Book Club family and tell you a little about what to expect.</div>
+            <div>Lausanne Startup Book Club is started in March 2015 with one purpose: to help you and me learn and share all things related to building and scaling a startup.
+              You could be a newbie to the startup world. Or you could already have some companies under your belt. It all works.
+            </div>
+            <div>  The initial plan is as follows. We meet up once per month. We read books and articles of all topics that have to do with startup.
+              After getting to know more about our other common interests, we will see how the club can evolve.
+            </div>
+            <div>
+              Startup is challenging but should not be a lonely journey. With the club, we learn and grow together. What do you say?
+            </div>
+            <div>
+              Now, email me at son.dolenh@gmail.com and be one of us!
+            </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
