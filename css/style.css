@@ -6,12 +6,13 @@ body, html{
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a;
+	font-size: 16px;
 }
 
 h1{
 	font-size: 50px;
-	padding: 10px;
-	margin: 10px;
+	padding: 00px;
+	margin: 0px;
 }
 h1 strong{
 	font-weight: 900;
@@ -42,7 +43,7 @@ p.intro{
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
 }
-a{ color: #FCAC45;}
+
 a:hover,
 a:focus{
 	text-decoration: none;
@@ -145,7 +146,7 @@ font-weight: 900;
 #tf-home p.lead{
 	color: #e3e3e3;
 	padding: 10px;
-	margin: 0px 10px 30px 10px;
+	margin: 0px 10px 40px 0px;
 }
 
 .content{
@@ -163,7 +164,7 @@ a.fa.fa-angle-down {
 	border: 2px solid #fff;
 	border-radius: 50%;
 	font-size: 24px;
-	margin-top: 150px;
+	margin-top: 110px;
 	transition: all 0.5s;
 }
 a.fa.fa-angle-down:hover{
@@ -295,6 +296,7 @@ img.img-circle.team-img {
 
 #tf-services i.fa {
 	background: #FFF;
+	color: #FCAC45;
 	font-size: 40px;
 	border: 4px solid #FCAC45;
 	width: 100px;
@@ -310,9 +312,10 @@ img.img-circle.team-img {
 	padding: 20px 25px;
 }
 
-#tf-services .service:hover>i.fa{
+#tf-services .service i.fa:hover{
 	background: #FCAC45;
 	color: #ffffff;
+	cursor: pointer;
 }
 
 /* Clients Section */
@@ -343,25 +346,31 @@ img.img-circle.team-img {
     color: #FFF;
     text-align: center;
 }
+
+
 /* Gallery/Works/Portfolios/Books Section
 ==============================*/
 
 .categories{
-	padding: 10px 0;
+	padding: 10px 0px 30px 0px;
 }
+
 ul.cat li{
 	display: inline-block;
+}
+ul.cat>li{
+	margin-bottom:10px
 }
 #tf-works li.pull-right {
 	margin-top: 10px;
 }
 ol.type li{
 	display: inline-block;
-	margin-left: 20px;
 }
 ol.type li:after{
 	content: ' | ';
 	margin-left: 20px;
+	margin-right: 20px;
 }
 ol.type li:last-child:after { content: ''; }
 ol.type li a{ color: #bbb}
@@ -573,6 +582,10 @@ nav#footer p{
 	font-size: 12px;
 	margin-top: 10px;
 }
+
+#footer a {
+	color: #FCAC45;
+}
 #footer i.fa {
 	height: 30px;
 	width: 30px;
@@ -587,3 +600,43 @@ nav#footer p{
 	background: #FCAC45;
 	border-color: #FCAC45;
 	color: #ffffff;
+}
+/* Modal dialog*/
+#myModal .modal-header{
+	display: none;
+}
+#myModal .modal-body{
+	margin: 50px 65px 30px 60px;
+	font-size: 18px;
+	line-height: 1.7;
+	max-height: 640px;
+	overflow: auto;
+}
+#myModal .modal-body div{
+	margin: 15px 0px 15px 0px;
+	padding: 0px;
+}
+#myModal .modal-body .row>div{
+	margin: 0px;
+	padding: 0px;
+}
+#myModal .modal-body .row{
+	margin: 0px;
+	padding: 0px;
+}
+#myModal .modal-body em{
+	color: #000;
+}
+#myModal .modal-body h3{
+	line-height: 1.7;
+	margin: 0px;
+}
+#myModal .modal-body .col-md-4{
+	padding-left: 0px;
+}
+#myModal button.btn.tf-btn.btn-default {
+	padding: 10px 50px;
+	margin: 10px 80px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
