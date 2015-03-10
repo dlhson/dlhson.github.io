@@ -618,7 +618,7 @@ nav#footer p{
 	display: none;
 }
 #myModal .modal-body{
-	margin: 50px 65px 30px 60px;
+	margin: 50px 60px 30px 60px;
 	font-size: 18px;
 	line-height: 1.7;
 	max-height: 675px;
@@ -630,7 +630,7 @@ nav#footer p{
 }
 #myModal .modal-body .row>div{
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 16px;
 }
 #myModal .modal-body .row{
 	margin: 0px;
