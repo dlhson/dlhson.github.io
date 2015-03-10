@@ -187,6 +187,18 @@ ul.about-list li{
 ul.about-list li span{
 	margin-right: 10px;
 }
+#tf-about .about-text{
+	margin: 10px 15px;
+}
+#tf-about .crop{
+	float:left;
+	margin:0px;
+	overflow:hidden;
+}
+/* input values to crop the image: top, right, bottom, left */
+#tf-about .crop img{
+	margin:-20px 0px -130px 0px;
+}
 
 /* Team Section */
 #tf-team{
@@ -609,7 +621,7 @@ nav#footer p{
 	margin: 50px 65px 30px 60px;
 	font-size: 18px;
 	line-height: 1.7;
-	max-height: 640px;
+	max-height: 675px;
 	overflow: auto;
 }
 #myModal .modal-body div{
@@ -636,7 +648,7 @@ nav#footer p{
 }
 #myModal button.btn.tf-btn.btn-default {
 	padding: 10px 50px;
-	margin: 10px 80px;
+	margin: 10px 70px;
 	color: #ffffff;
 	text-transform: uppercase;
 }
