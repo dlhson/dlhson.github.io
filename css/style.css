@@ -544,7 +544,7 @@ label {
 	box-shadow: transparent;
 }
 
-a.btn.tf-btn.btn-default {
+a.btn.tf-btn.btn-default, button.btn.tf-btn.btn-default {
 	background: #FCAC45;
 	border: 0;
 	border-radius: 0;
@@ -553,12 +553,13 @@ a.btn.tf-btn.btn-default {
 	text-transform: uppercase;
 }
 
-button.btn.tf-btn.btn-default {
-	background: #FCAC45;
-	border: 0;
+a.btn.tf-btn.btn-secondary
+ {
+	border: 1;
 	border-radius: 0;
 	padding: 10px 40px;
-	color: #ffffff;
+	color: #FCAC45;
+	border-color: #FCAC45;
 	text-transform: uppercase;
 }
 
